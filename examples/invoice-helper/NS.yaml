@@ -1,0 +1,8 @@
+name: invoice-helper
+description: Demo namespace — 发票数据整理与健全性检查。触发：整理/校验/汇总发票。演示 NS-Agent 全部能力位：skills 流程、结构化知识库（缺失值规则）、确定性工具（合计脚本）、MCP 绑定（filesystem server）、验收判据。
+owner: ns-agent-contributors
+context: examples/invoice-helper/context
+acceptance: acceptance/criteria.md
+requires:
+  mcp: false
+boundaries: 演示用，勿接真实财务数据；税务口径、发票真伪判断一律转人工。

@@ -1,0 +1,25 @@
+{
+  "name": "ns-agent",
+  "version": "0.1.0",
+  "description": "NS-Agent reference runtime: namespace-based agent on pi-agent-core, with native MCP support",
+  "type": "module",
+  "bin": {
+    "ns-agent": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "selftest": "node dist/selftest.js",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "^0.85.1",
+    "@earendil-works/pi-ai": "^0.85.1",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "typebox": "^1.0.0",
+    "yaml": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

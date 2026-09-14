@@ -1,0 +1,13 @@
+name: my-namespace
+description: 一句话：这个业务实体提供什么能力、agent 什么时候该激活它。写具体触发场景，不要写"帮助处理 X"。
+owner: your-name
+context: /absolute/path/to/business-repo
+acceptance: acceptance/criteria.md
+# model:                     # 可选：激活时切换的模型偏好
+#   provider: anthropic
+#   id: claude-sonnet-4-5
+# requires:
+#   mcp: true                # 可选：声明 MCP 为硬依赖
+# knowledge:                # 可选：知识库搜索方案（默认 grep）
+#   search: grep            # grep（零依赖子串匹配）| fts5（SQLite FTS5+CJK分词，BM25排名）| none
+boundaries: 本 NS 不做什么、什么情况必须转人工。

@@ -1,0 +1,9 @@
+rules:
+  - id: missing-not-zero
+    field: amount
+    rule: 金额缺失绝不当零值计入合计；该行必须被标记并从合计排除
+  - id: date-format
+    field: date
+    rule: 日期必须为 YYYY-MM-DD；不合规标记该行
+  - id: summary-required
+    rule: summary.md 必须包含 valid_total + 全部被标记行 + 复算方式（ns_tool sum_valid.py）

@@ -1,0 +1,11 @@
+namespaces/
+runtime/node_modules/
+runtime/dist/
+__pycache__/
+.DS_Store
+.usage.jsonl
+.env
+.env.*
+*.key
+*.pem
+.sisyphus/
